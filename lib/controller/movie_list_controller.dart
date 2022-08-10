@@ -14,7 +14,9 @@ class MovieListController {
           if (_movieDetailsModel.type == "movie") {
             _detailsList.add(_movieDetailsModel);
           }
-        } catch (_) {}
+        } catch (_) {
+          continue;
+        }
       }
       //print(_movieDetailsModel);
       return _detailsList;
